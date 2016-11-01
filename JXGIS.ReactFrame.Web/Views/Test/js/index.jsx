@@ -1,45 +1,53 @@
-﻿//ReactDOM.render(
-//      <div>
-//        <antd.Button type="primary">Primary</antd.Button>
-//        <antd.Button>Default</antd.Button>
-//        <antd.Button type="ghost">Ghost</antd.Button>
-//        <antd.Button type="dashed">Dashed</antd.Button>
-//      </div>,
-//    document.getElementById('app')
-//);
+﻿var node = document.getElementById('app');
 
-const App = React.createClass({
-    getInitialState() {
-        return {
-            loading: false,
-            iconLoading: false,
-        };
-    },
-    enterLoading() {
-        this.setState({ loading: true });
-    },
-    enterIconLoading() {
-        this.setState({ iconLoading: true });
-    },
-    render() {
-        return (
-          <div>
-            <antd.Button type="primary" loading>
-              Loading
-            </antd.Button>
-            <antd.Button type="primary" size="small" loading>
-              Loading
-            </antd.Button>
-            <br />
-            <antd.Button type="primary" loading={this.state.loading} onClick={this.enterLoading}>
-              Click me!
-            </antd.Button>
-            <antd.Button type="primary" icon="poweroff" loading={this.state.iconLoading} onClick={this.enterIconLoading}>
-              Click me!
-            </antd.Button>
-          </div>
-      );
-    },
+
+
+
+var Collapse = antd.Collapse;
+const Panel = Collapse.Panel;
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+   A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+
+ReactDOM.render(
+  <Collapse accordion>
+    <Panel header={'This is panel header 1'} key="1">
+      <p>{text}</p>
+    </Panel>
+    <Panel header={'This is panel header 2'} key="2">
+      <p>{text}</p>
+    </Panel>
+    <Panel header={'This is panel header 3'} key="3">
+      <p>{text}</p>
+    </Panel>
+  </Collapse>
+, node);
+
+$(node).mCustomScrollbar({
+    theme: "dark-blue"
 });
-
-ReactDOM.render(<App />, document.getElementById('app'));

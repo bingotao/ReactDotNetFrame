@@ -1,16 +1,25 @@
-﻿@import "~/Extends/site.less";
+﻿@import "~/Extends/default.less";
 
 #app {
     height: 200px;
-    width: 200px;
-    background-color: @bgclr-blue;
-    border-radius: @bdrds-5;
+    width: 400px;
+    /*border: 1px solid red;*/
+}
+
+.mCS-dark-blue .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0;
+}
+
+.mCS-dark-blue.mCSB_inside > .mCSB_container {
+    margin-right: 15px;
 }
 
 
-#map {
-    height: 300px;
-    width: 300px;
-    background-color: red;
-    padding: 10px;
+.mCS-dark-blue .mCSB_draggerRail {
+    background-color: @border-color-base;
+}
+
+.mCS-dark-blue .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: @primary-color;
+    width: 4px;
 }

@@ -169,6 +169,10 @@
     <Content Include="Reference\antd-2.2.0\antd.min.css" />
     <Content Include="Reference\antd-2.2.0\antd.min.js" />
     <Content Include="Reference\font\iconfont.svg" />
+    <Content Include="Reference\jquery-3.1.1.min.js" />
+    <Content Include="Reference\mCustomScrollbar\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Reference\mCustomScrollbar\jquery.mCustomScrollbar.min.css" />
+    <Content Include="Reference\mCustomScrollbar\mCSB_buttons.png" />
     <Content Include="Reference\react-15.3.2\react-dom.min.js" />
     <Content Include="Reference\react-15.3.2\react.min.js" />
     <Content Include="Views\Test\js\index.jsx" />
@@ -190,7 +194,7 @@
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Shared\_MasterBlank.cshtml" />
     <Content Include="Views\Test\css\index.less" />
-    <Content Include="Extends\site.less" />
+    <Content Include="Extends\default.less" />
     <Content Include="Config\SystemParameters.json" />
     <Content Include="Reference\font\iconfont.eot" />
     <Content Include="Reference\font\iconfont.ttf" />

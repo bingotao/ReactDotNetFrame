@@ -15,12 +15,16 @@ namespace JXGIS.ReactFrame.Web
         {
             //全局style
             bundles.Add(new Bundle("~/gStyle").Include(
+                _refPath + "mCustomScrollbar/jquery.mCustomScrollbar.min.css",
                 _refPath + "antd-2.2.0/antd.min.css"));
             //全局script
             bundles.Add(new Bundle("~/gScripts").Include(
+                _refPath + "jquery-3.1.1.min.js",
                 _refPath + "react-15.3.2/react.min.js",
                 _refPath + "react-15.3.2/react-dom.min.js",
-                _refPath + "antd-2.2.0/antd.min.js"));
+                _refPath + "antd-2.2.0/antd.min.js",
+                _refPath + "mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"
+                ));
 
             bundles.Add(new LessBundle("~/Test/index/css").Include("~/Views/Test/css/index.less"));
             bundles.Add(new BabelBundle("~/Test/index/js").Include("~/Views/Test/js/index.jsx"));
