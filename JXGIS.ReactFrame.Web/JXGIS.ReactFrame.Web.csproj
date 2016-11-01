@@ -57,6 +57,14 @@
       <HintPath>..\packages\dotless.1.5.2\lib\dotless.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="JavaScriptEngineSwitcher.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
       <HintPath>..\packages\JavaScriptEngineSwitcher.Core.2.0.0\lib\net40-client\JavaScriptEngineSwitcher.Core.dll</HintPath>
       <Private>True</Private>
@@ -181,7 +189,7 @@
     <Content Include="Views\Shared\_MasterBlank.cshtml" />
     <Content Include="Views\Test\css\index.less" />
     <Content Include="Extends\site.less" />
-    <Content Include="systemParameters.json" />
+    <Content Include="Config\SystemParameters.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -194,13 +202,13 @@
     <Folder Include="Extends\Components\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JXGIS.ReactFrame.BaseLib\JXGIS.ReactFrame.BaseLib.csproj">
+    <ProjectReference Include="..\JXGIS.Common.BaseLib\JXGIS.Common.BaseLib.csproj">
       <Project>{e7315ad3-0689-435f-aea4-7b31c166ffaf}</Project>
-      <Name>JXGIS.ReactFrame.BaseLib</Name>
+      <Name>JXGIS.Common.BaseLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\JXGIS.ReactFrame.Entity\JXGIS.ReactFrame.Entity.csproj">
+    <ProjectReference Include="..\JXGIS.Common.Entity\JXGIS.Common.Entity.csproj">
       <Project>{4c5247e6-87c1-46c3-ae9e-104657ab5404}</Project>
-      <Name>JXGIS.ReactFrame.Entity</Name>
+      <Name>JXGIS.Common.Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

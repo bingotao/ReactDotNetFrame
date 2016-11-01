@@ -1,4 +1,4 @@
-﻿using JXGIS.ReactFrame.BaseLib.Bundles;
+﻿using JXGIS.Common.BaseLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
