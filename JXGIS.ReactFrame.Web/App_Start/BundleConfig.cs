@@ -22,12 +22,8 @@ namespace JXGIS.ReactFrame.Web
                 _refPath + "react-15.3.2/react-dom.min.js",
                 _refPath + "antd-2.2.0/antd.min.js"));
 
-
-
             bundles.Add(new LessBundle("~/Test/index/css").Include("~/Views/Test/css/index.less"));
             bundles.Add(new BabelBundle("~/Test/index/js").Include("~/Views/Test/js/index.jsx"));
-
         }
-
     }
 }

@@ -167,6 +167,7 @@
     <Content Include="Global.asax" />
     <Content Include="Reference\antd-2.2.0\antd.min.css" />
     <Content Include="Reference\antd-2.2.0\antd.min.js" />
+    <Content Include="Reference\antd-2.2.0\iconfont.svg" />
     <Content Include="Reference\react-15.3.2\react-dom.min.js" />
     <Content Include="Reference\react-15.3.2\react.min.js" />
     <Content Include="Views\Test\js\index.jsx" />
@@ -190,6 +191,9 @@
     <Content Include="Views\Test\css\index.less" />
     <Content Include="Extends\site.less" />
     <Content Include="Config\SystemParameters.json" />
+    <Content Include="Reference\antd-2.2.0\iconfont.eot" />
+    <Content Include="Reference\antd-2.2.0\iconfont.ttf" />
+    <Content Include="Reference\antd-2.2.0\iconfont.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
