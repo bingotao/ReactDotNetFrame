@@ -180,7 +180,7 @@
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Shared\_MasterBlank.cshtml" />
     <Content Include="Views\Test\css\index.less" />
-    <Content Include="Reference\site.less" />
+    <Content Include="Extends\site.less" />
     <Content Include="systemParameters.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -191,6 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Extends\Components\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JXGIS.ReactFrame.BaseLib\JXGIS.ReactFrame.BaseLib.csproj">

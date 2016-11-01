@@ -1,9 +1,8 @@
 ﻿@{
     Layout = "~/Views/Shared/_MasterBlank.cshtml";
 }
-
+@Styles.Render("~/Test/index/css")
 <div id="app"></div>
 <div id="map">map</div>
 
-<script src="@Url.Content("~/Views/Test/js/index.jsx")"></script>
-<link href="@Url.Content("~/Views/Test/css/index.less")" rel="stylesheet" /> 
+@Scripts.Render("~/Test/index/js")
